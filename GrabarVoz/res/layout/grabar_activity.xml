@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnGrabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/record"
+        android:onClick="grabar"
+        android:text="Grabar" />
+
+    <Button
+        android:id="@+id/btnDetener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGrabar"
+        android:layout_alignRight="@+id/btnGrabar"
+        android:layout_below="@+id/btnGrabar"
+        android:layout_marginTop="22dp"
+        android:onClick="detenerGrabacion"
+        android:text="Detener grabacion" 
+        android:drawableLeft="@drawable/stopred"/>
+
+    <Button
+        android:id="@+id/btnReproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/play"
+        android:onClick="reproducir"
+        android:text="Reproducir" />
+
+    <Button
+        android:id="@+id/btnDetenerReproduccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnReproducir"
+        android:layout_alignRight="@+id/btnReproducir"
+        android:layout_below="@+id/btnReproducir"
+        android:layout_marginTop="26dp"
+        android:onClick="detener"
+        android:text="Detener reproduccion" 
+        android:drawableLeft="@drawable/stop"/>
+
+</LinearLayout>
